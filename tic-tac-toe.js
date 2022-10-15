@@ -95,3 +95,22 @@ function whoIsWinner(){
         status.classList.add("you-won");
     }
 }
+
+function restartGame()
+{
+    var reset = document.querySelector("button");
+    reset.addEventListener("click", refresh);
+
+}
+
+function refresh()
+{
+    location.reload();
+}
+
+document.addEventListener("DOMContentLoaded",function(){
+    layout();
+    playGame();
+    restartGame();
+    
+})
